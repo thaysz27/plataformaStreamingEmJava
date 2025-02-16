@@ -1,5 +1,7 @@
 package streaming.modelos;
 
+import streaming.calculos.Classificavel;
+
 public class Titulo {
 
     private String nome;
