@@ -1,37 +1,42 @@
-Plataforma de Streaming em Java
+# Plataforma de Streaming em Java
 
-Este projeto é uma aplicação Java que simula uma plataforma de streaming, permitindo a gestão de filmes, séries e episódios. Foi desenvolvido durante a formação "Aprenda a programar em Java com Orientação a Objetos" da Alura.
+Este projeto é uma aplicação Java que simula uma plataforma de streaming, permitindo a gestão de filmes, séries e episódios. Foi desenvolvido durante a formação **"Aprenda a programar em Java com Orientação a Objetos"** da Alura.
 
-📌 Funcionalidades
+## 📌 **Funcionalidades**
+### ✅ **Cálculo do tempo total de exibição.**
+### ✅ **Filtros de recomendação baseados em critérios específicos.**
+### ✅ **Busca de títulos com tratamento de erros.**
 
-Cálculo do tempo total de exibição.
+## 📂 **Estrutura do Projeto**
+### O projeto está organizado de forma modular para facilitar a manutenção e expansão. O código-fonte está localizado na pasta `src`, dividido em pacotes específicos de acordo com a responsabilidade de cada conjunto de classes. 
 
-Filtros de recomendação baseados em critérios específicos.
+### 📌 **Pacotes do projeto:**
+- **`calculos`**: Contém classes responsáveis por cálculos e recomendações.
+- **`excecao`**: Trata erros específicos que podem ocorrer na execução da aplicação.
+- **`modelos`**: Define os principais objetos do sistema, como `Filme`, `Serie` e `Episodio`.
+- **`principal`**: Contém as classes responsáveis pela execução da aplicação, incluindo diferentes pontos de entrada para testar funcionalidades distintas.
 
-Busca de títulos com tratamento de erros.
+Além do código-fonte, o projeto inclui:
+- 📄 **`filmes.txt`**: Base de dados para testes.
+- 📄 **`.gitignore`**: Define quais arquivos devem ser ignorados pelo Git.
+- 📄 **`Plataforma Streaming em Java.iml`**: Arquivo de configuração para IDEs compatíveis.
 
-📂 Estrutura do Projeto
+## 🚀 **Como Executar**
+### 1️⃣ Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/plataforma-streaming-java.git
+   ```
+### 2️⃣ Abra o projeto em uma IDE como IntelliJ IDEA ou Eclipse.
+### 3️⃣ Compile e execute a classe `Main.java` ou `PrincipalComBusca.java`.
 
-O projeto está organizado de forma modular para facilitar a manutenção e expansão. O código-fonte está localizado na pasta src, dividido em pacotes específicos de acordo com a responsabilidade de cada conjunto de classes. O pacote calculos contém classes responsáveis por cálculos e recomendações, enquanto o pacote excecao trata erros específicos que podem ocorrer na execução da aplicação. No pacote modelos, encontram-se as classes que representam os principais objetos do sistema, como Filme, Serie e Episodio. Já o pacote principal contém as classes responsáveis pela execução da aplicação, incluindo diferentes pontos de entrada para testar funcionalidades distintas.
+## 🛠 **Tecnologias Utilizadas**
+### 🔹 **Java 17**
+### 🔹 **Maven** (se aplicável)
 
-Além do código-fonte, o projeto inclui um arquivo filmes.txt, que serve como base de dados para testes, e um arquivo .gitignore, que define quais arquivos devem ser ignorados pelo Git. Há também um arquivo de configuração do projeto (Plataforma Streaming em Java.iml), útil para usuários que desejam abrir o projeto diretamente em uma IDE compatível.
+## 📄 **Licença**
+### Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-🚀 Como Executar
+---
 
-Clone o repositório:
+💡 **Sinta-se à vontade para contribuir e melhorar este projeto!** 🚀
 
-git clone https://github.com/seu-usuario/plataforma-streaming-java.git
-
-Abra o projeto em uma IDE como IntelliJ IDEA ou Eclipse.
-
-Compile e execute a classe Main.java ou PrincipalComBusca.java.
-
-🛠 Tecnologias Utilizadas
-
-Java 17
-
-Maven (se aplicável)
-
-📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
