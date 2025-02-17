@@ -2,6 +2,7 @@ package streaming.modelos;
 
 import com.google.gson.annotations.SerializedName;
 import streaming.calculos.Classificavel;
+import streaming.excecao.ErroDeConversaoException;
 
 public class Titulo implements Comparable<Titulo> {
 
@@ -19,8 +20,12 @@ public class Titulo implements Comparable<Titulo> {
 
     public Titulo(TituloOmdb meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
+        if (meuTituloOmdb.year().length() > 4) {
+            throw new ErroDeConversaoException("Não consegui converter o ano" +
+                    " porque tem mais de 4 caracteres");
+        }
         this.anoLancamento = Integer.valueOf(meuTituloOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,2));
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(1,3));
     }
 
     /*Setters*/
