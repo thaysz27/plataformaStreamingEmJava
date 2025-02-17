@@ -1,8 +1,9 @@
 package streaming.modelos;
 
+import com.google.gson.annotations.SerializedName;
 import streaming.calculos.Classificavel;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
     private String nome;
     private int anoLancamento;
@@ -14,6 +15,12 @@ public class Titulo {
     public Titulo(String nome, int anoLancamento) {
         this.nome = nome;
         this.anoLancamento = anoLancamento;
+    }
+
+    public Titulo(TituloOmdb meuTituloOmdb) {
+        this.nome = meuTituloOmdb.title();
+        this.anoLancamento = Integer.valueOf(meuTituloOmdb.year());
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,2));
     }
 
     /*Setters*/
@@ -72,4 +79,15 @@ public class Titulo {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
+    @Override
+    public int compareTo(Titulo titulo2) {
+        return this.getNome().compareTo(titulo2.getNome());
+    }
+
+    @Override
+    public String toString() {
+        return  "nome='" + nome + '\'' +
+                ", anoLancamento=" + anoLancamento + "," +
+                " duração= " + duracaoEmMinutos;
+    }
 }
