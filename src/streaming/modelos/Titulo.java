@@ -25,7 +25,7 @@ public class Titulo implements Comparable<Titulo> {
                     " porque tem mais de 4 caracteres");
         }
         this.anoLancamento = Integer.valueOf(meuTituloOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(1,3));
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,2));
     }
 
     /*Setters*/
@@ -91,8 +91,8 @@ public class Titulo implements Comparable<Titulo> {
 
     @Override
     public String toString() {
-        return  "nome='" + nome + '\'' +
+        return  "(nome='" + nome + '\'' +
                 ", anoLancamento=" + anoLancamento + "," +
-                " duração= " + duracaoEmMinutos;
+                " duração= " + duracaoEmMinutos + ")";
     }
 }
