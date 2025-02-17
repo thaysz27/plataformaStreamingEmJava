@@ -12,16 +12,9 @@ Busca de títulos com tratamento de erros.
 
 📂 Estrutura do Projeto
 
-Plataforma Streaming em Java
-│── src/
-│   ├── streaming/
-│   │   ├── calculos/        # Classes para cálculos e recomendações
-│   │   ├── excecao/         # Tratamento de erros específicos
-│   │   ├── modelos/         # Modelos de domínio como Filme, Serie, Episodio
-│   │   ├── principal/       # Classes principais para execução
-│── filmes.txt               # Lista de filmes para testes
-│── .gitignore               # Arquivos ignorados pelo Git
-│── Plataforma Streaming em Java.iml # Arquivo de configuração do projeto
+O projeto está organizado de forma modular para facilitar a manutenção e expansão. O código-fonte está localizado na pasta src, dividido em pacotes específicos de acordo com a responsabilidade de cada conjunto de classes. O pacote calculos contém classes responsáveis por cálculos e recomendações, enquanto o pacote excecao trata erros específicos que podem ocorrer na execução da aplicação. No pacote modelos, encontram-se as classes que representam os principais objetos do sistema, como Filme, Serie e Episodio. Já o pacote principal contém as classes responsáveis pela execução da aplicação, incluindo diferentes pontos de entrada para testar funcionalidades distintas.
+
+Além do código-fonte, o projeto inclui um arquivo filmes.txt, que serve como base de dados para testes, e um arquivo .gitignore, que define quais arquivos devem ser ignorados pelo Git. Há também um arquivo de configuração do projeto (Plataforma Streaming em Java.iml), útil para usuários que desejam abrir o projeto diretamente em uma IDE compatível.
 
 🚀 Como Executar
 
