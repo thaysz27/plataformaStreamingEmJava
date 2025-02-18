@@ -39,4 +39,3 @@ Além do código-fonte, o projeto inclui:
 ---
 
 💡 **Sinta-se à vontade para contribuir e melhorar este projeto!** 🚀
-
